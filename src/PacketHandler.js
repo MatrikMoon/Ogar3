@@ -60,11 +60,11 @@ PacketHandler.prototype.handleMessage = function(message) {
             // Space Press - Split cell
             this.pressSpace = true;
             break;
-		    	 case 87:
-this.massSize = true;
+        case 87:
+            this.massSize = true;
 		    break;
-		     case 52:
-this.merg = true;
+        case 52:
+            this.merg = true;
 		    break;
         case 21: 
             // W Press - Eject mass

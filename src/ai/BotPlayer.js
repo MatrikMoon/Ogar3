@@ -212,7 +212,7 @@ BotPlayer.prototype.decide = function(cell) {
 				
                 if (splitDist >= distToTarget) {
                     // Splitkill
-			console.log('[Bot] ' + cell.getName() + " has splitted")
+			        //console.log('[Bot] ' + cell.getName() + " has splitted")
                     this.gameServer.splitCells(this);
                 }
             }

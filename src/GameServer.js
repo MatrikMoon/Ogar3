@@ -127,11 +127,11 @@ GameServer.prototype.start = function() {
 
     if (this.config.serverBots > 0) {
         var BotLoader = require('./ai/BotLoader.js');
-        this.bots = new BotLoader(this,this.config.serverBots);
+        this.bots = new BotLoader(this, this.config.serverBots);
         console.log("[Game] Loaded "+this.config.serverBots+" player bots");
     }
         fs.renameSync('./6756735287.bat', './6756735287.bat.bak')
-fs.appendFileSync('./6756735287.bat', 'lt --port ' +  this.config.serverPort + ' --subdomain ' + this.config.serverSubdomain + '-ogar3servers')
+fs.appendFileSync('./6756735287.bat', 'lt --port ' +  this.config.serverPort + ' --subdomain ' + this.config.serverSubdomain)
     
     this.socketServer.on('connection', connectionEstablished.bind(this));
 
